@@ -1,0 +1,27 @@
+May 21 16:23:42.393 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 21 16:23:42.394 HYPERVISOR: Started on IP = localhost, TCP port = 56724.
+May 21 16:23:42.880 HYPERVISOR: exec_cmd: hypervisor version 
+May 21 16:23:42.880 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips 
+May 21 16:23:42.881 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips
+May 21 16:23:42.881 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\4614a0a5-74d5-4469-9dc6-d58625184de8 
+May 21 16:23:42.882 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\4614a0a5-74d5-4469-9dc6-d58625184de8
+May 21 16:23:42.883 HYPERVISOR: exec_cmd: vm create ekb-gw 4 c3745 
+May 21 16:23:42.884 VM: VM ekb-gw created.
+May 21 16:23:42.884 HYPERVISOR: exec_cmd: vm set_con_tcp_port ekb-gw 5003 
+May 21 16:23:42.885 HYPERVISOR: exec_cmd: c3745 get_mac_addr ekb-gw 
+May 21 16:23:42.885 HYPERVISOR: exec_cmd: vm set_disk0 ekb-gw 0 
+May 21 16:23:42.886 HYPERVISOR: exec_cmd: vm set_exec_area ekb-gw 64 
+May 21 16:23:42.886 HYPERVISOR: exec_cmd: vm get_status ekb-gw 
+May 21 16:23:42.886 HYPERVISOR: exec_cmd: vm set_idle_pc ekb-gw 0x6023f5d0 
+May 21 16:23:42.887 HYPERVISOR: exec_cmd: vm set_ios ekb-gw C:/Users/yatim/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+May 21 16:23:42.888 HYPERVISOR: exec_cmd: c3745 set_mac_addr ekb-gw c404.10f8.0000 
+May 21 16:23:42.888 HYPERVISOR: exec_cmd: vm set_nvram ekb-gw 256 
+May 21 16:23:42.889 HYPERVISOR: exec_cmd: vm set_ram ekb-gw 256 
+May 21 16:23:42.889 HYPERVISOR: exec_cmd: vm get_status ekb-gw 
+May 21 16:23:42.890 HYPERVISOR: exec_cmd: vm slot_add_binding ekb-gw 1 0 NM-4T 
+May 21 16:23:43.787 HYPERVISOR: exec_cmd: nio create_udp udp-7f77eaf3-512c-49d0-bf62-c420052db7bf 10008 127.0.0.1 10009 
+May 21 16:23:44.038 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ekb-gw 0 1 udp-7f77eaf3-512c-49d0-bf62-c420052db7bf 
+May 21 16:23:44.039 HYPERVISOR: exec_cmd: vm get_status ekb-gw 
+May 21 16:23:44.665 HYPERVISOR: exec_cmd: nio create_udp udp-6ec8da76-662f-4e12-ab7a-5db6e5501873 10026 127.0.0.1 10027 
+May 21 16:23:44.668 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ekb-gw 0 0 udp-6ec8da76-662f-4e12-ab7a-5db6e5501873 
+May 21 16:23:44.668 HYPERVISOR: exec_cmd: vm get_status ekb-gw 

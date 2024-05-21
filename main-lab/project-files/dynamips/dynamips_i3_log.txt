@@ -1,0 +1,27 @@
+May 21 16:23:41.841 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 21 16:23:41.842 HYPERVISOR: Started on IP = localhost, TCP port = 56721.
+May 21 16:23:42.324 HYPERVISOR: exec_cmd: hypervisor version 
+May 21 16:23:42.325 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips 
+May 21 16:23:42.325 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips
+May 21 16:23:42.325 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\9f396685-788b-45a4-b264-3f2ce1b2e79a 
+May 21 16:23:42.327 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\9f396685-788b-45a4-b264-3f2ce1b2e79a
+May 21 16:23:42.327 HYPERVISOR: exec_cmd: vm create perm-gw 3 c3745 
+May 21 16:23:42.329 VM: VM perm-gw created.
+May 21 16:23:42.329 HYPERVISOR: exec_cmd: vm set_con_tcp_port perm-gw 5002 
+May 21 16:23:42.330 HYPERVISOR: exec_cmd: c3745 get_mac_addr perm-gw 
+May 21 16:23:42.330 HYPERVISOR: exec_cmd: vm set_disk0 perm-gw 0 
+May 21 16:23:42.331 HYPERVISOR: exec_cmd: vm set_exec_area perm-gw 64 
+May 21 16:23:42.331 HYPERVISOR: exec_cmd: vm get_status perm-gw 
+May 21 16:23:42.331 HYPERVISOR: exec_cmd: vm set_idle_pc perm-gw 0x6023f5d0 
+May 21 16:23:42.332 HYPERVISOR: exec_cmd: vm set_ios perm-gw C:/Users/yatim/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+May 21 16:23:42.333 HYPERVISOR: exec_cmd: c3745 set_mac_addr perm-gw c403.0560.0000 
+May 21 16:23:42.334 HYPERVISOR: exec_cmd: vm set_nvram perm-gw 256 
+May 21 16:23:42.334 HYPERVISOR: exec_cmd: vm set_ram perm-gw 256 
+May 21 16:23:42.335 HYPERVISOR: exec_cmd: vm get_status perm-gw 
+May 21 16:23:42.335 HYPERVISOR: exec_cmd: vm slot_add_binding perm-gw 1 0 NM-4T 
+May 21 16:23:43.487 HYPERVISOR: exec_cmd: nio create_udp udp-63adf770-0a10-4176-8f7d-f059e57c9526 10005 127.0.0.1 10006 
+May 21 16:23:43.736 HYPERVISOR: exec_cmd: vm slot_add_nio_binding perm-gw 0 1 udp-63adf770-0a10-4176-8f7d-f059e57c9526 
+May 21 16:23:43.737 HYPERVISOR: exec_cmd: vm get_status perm-gw 
+May 21 16:23:44.071 HYPERVISOR: exec_cmd: nio create_udp udp-f9ce2cc7-a51f-43ec-b202-a91e2988baeb 10012 127.0.0.1 10013 
+May 21 16:23:44.074 HYPERVISOR: exec_cmd: vm slot_add_nio_binding perm-gw 1 0 udp-f9ce2cc7-a51f-43ec-b202-a91e2988baeb 
+May 21 16:23:44.074 HYPERVISOR: exec_cmd: vm get_status perm-gw 

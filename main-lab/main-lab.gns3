@@ -112,8 +112,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"181\" height=\"40\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fa 0/1.30 192.168.30.1/24\nfa 0/1.40 192.168.40.1/24</text></svg>",
-                "x": 127,
-                "y": 82,
+                "x": 121,
+                "y": 71,
                 "z": 2
             },
             {
@@ -700,8 +700,8 @@
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "web-gw",
-                    "x": -80,
-                    "y": 0
+                    "x": -70,
+                    "y": 4
                 },
                 "locked": false,
                 "name": "web-gw",
