@@ -10,7 +10,7 @@
     "scene_height": 1000,
     "scene_width": 2000,
     "show_grid": false,
-    "show_interface_labels": true,
+    "show_interface_labels": false,
     "show_layers": false,
     "snap_to_grid": false,
     "supplier": null,
@@ -147,9 +147,9 @@
                 "drawing_id": "2d96f32f-de0c-4db6-a467-d84a2b9ba61e",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"173\" height=\"40\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">1. \u0412 \u0442\u0443\u043d\u043d\u0435\u043b\u044c VLAN 10, 30\n2. \u0412 PAT VLAN 20, 40</text></svg>",
-                "x": -489,
-                "y": -231,
+                "svg": "<svg width=\"265\" height=\"56\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">1. \u0412 \u0442\u0443\u043d\u043d\u0435\u043b\u044c VLAN 10, 30\n2. \u0412 PAT VLAN 20, 40\n3. PPP - username cisco password cisco</text></svg>",
+                "x": -522,
+                "y": -243,
                 "z": 2
             },
             {
@@ -175,8 +175,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"115\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">s1/0 2.2.2.1 /30</text></svg>",
-                "x": -332,
-                "y": -119,
+                "x": -279,
+                "y": -124,
                 "z": 2
             },
             {
@@ -184,8 +184,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"125\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fa 0/0 1.1.1.1 /30</text></svg>",
-                "x": 13,
-                "y": -107,
+                "x": -25,
+                "y": -127,
                 "z": 2
             },
             {
