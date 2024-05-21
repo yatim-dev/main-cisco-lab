@@ -10,7 +10,7 @@
     "scene_height": 1000,
     "scene_width": 2000,
     "show_grid": false,
-    "show_interface_labels": false,
+    "show_interface_labels": true,
     "show_layers": false,
     "snap_to_grid": false,
     "supplier": null,
@@ -941,8 +941,8 @@
                 "symbol": ":/symbols/classic/ethernet_switch.svg",
                 "template_id": "5aac1941-feeb-4710-9386-94a7bb02dee9",
                 "width": 72,
-                "x": 76,
-                "y": 199,
+                "x": 77,
+                "y": 188,
                 "z": 1
             },
             {
@@ -1095,5 +1095,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.46",
-    "zoom": 84
+    "zoom": 100
 }
