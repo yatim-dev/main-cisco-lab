@@ -58,8 +58,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"839\" height=\"512\"><rect width=\"839\" height=\"512\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
-                "x": -481,
-                "y": -25,
+                "x": -500,
+                "y": -30,
                 "z": 0
             },
             {
@@ -121,8 +121,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"59\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">OSPF 10</text></svg>",
-                "x": -444,
-                "y": 75,
+                "x": -126,
+                "y": 264,
                 "z": 2
             },
             {
@@ -210,7 +210,7 @@
                 "drawing_id": "f0c9d4b9-9029-4a2e-b196-4abde26f306a",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"121\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fa 0/0 172.16.0.1</text></svg>",
+                "svg": "<svg width=\"145\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fa 0/0 172.16.0.1/24</text></svg>",
                 "x": -57,
                 "y": -363,
                 "z": 2
@@ -219,7 +219,7 @@
                 "drawing_id": "4cbb2025-1bb3-4048-9d36-b941ab8bf309",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"76\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">172.16.0.2</text></svg>",
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">172.16.0.2/24</text></svg>",
                 "x": 195,
                 "y": -355,
                 "z": 2
@@ -264,7 +264,7 @@
                 "drawing_id": "07a18974-51a1-4aa7-873c-05175a59bd9f",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"70\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS 65001</text></svg>",
+                "svg": "<svg width=\"70\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS 65000</text></svg>",
                 "x": -174,
                 "y": -197,
                 "z": 2
@@ -282,9 +282,9 @@
                 "drawing_id": "253d58e5-3a7a-45f4-8ffd-d9965d80a00f",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"70\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS 65002</text></svg>",
-                "x": -445,
-                "y": 92,
+                "svg": "<svg width=\"70\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS 65001</text></svg>",
+                "x": -472,
+                "y": -7,
                 "z": 2
             },
             {
@@ -303,6 +303,15 @@
                 "svg": "<svg width=\"145\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">PPPoE Server - Client</text></svg>",
                 "x": 35,
                 "y": -75,
+                "z": 2
+            },
+            {
+                "drawing_id": "b63493f8-b38d-4d4f-90e8-d097c059ef09",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"70\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">AS 65002</text></svg>",
+                "x": 253,
+                "y": -8,
                 "z": 2
             }
         ],
