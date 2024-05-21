@@ -1,0 +1,10 @@
+int multilink 1
+ppp multilink group 1
+ip address negotiated
+exit
+
+int serial 1/0
+encapsulation ppp
+ppp multilink group 1
+no sh
+ex

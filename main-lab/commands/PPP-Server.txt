@@ -1,0 +1,13 @@
+ip local pool PERM-PPP 2.2.2.2
+int multilink 1
+ppp multilink group 1
+ip add 2.2.2.1 255.255.255.252
+no sh
+peer default ip address pool PERM-PPP
+ex
+
+int s 1/0
+encapsulation ppp
+ppp multilink group 1
+no sh
+ex

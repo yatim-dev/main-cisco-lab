@@ -1,0 +1,37 @@
+int fa 0/0
+sh
+ex
+int dialer 1
+ip address negotiated
+encapsulation ppp
+ppp authentication chap callin
+ppp chap hostname cisco
+ppp chap password cisco
+dialer-group 1
+dialer pool 1
+exit
+int fa 0/0
+pppoe enable
+pppoe-client dial-pool-number 1
+no sh
+exit
+
+###################################
+
+int fa 0/0
+sh
+ex
+int dialer 2
+ip address negotiated
+encapsulation ppp
+ppp authentication chap callin
+ppp chap hostname cisco
+ppp chap password cisco
+dialer-group 2
+dialer pool 2
+exit
+int fa 0/0
+pppoe enable
+pppoe-client dial-pool-number 2
+no sh
+exit

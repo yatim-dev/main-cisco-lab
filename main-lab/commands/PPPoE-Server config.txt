@@ -1,0 +1,33 @@
+username cisco password cisco
+aaa new-model
+aaa authentication ppp default local
+
+ip local pool EKB-PPPoE 10.10.10.2
+int virtual-template 1
+ip add 10.10.10.1 255.255.255.252
+encapsulation ppp
+ppp authentication chap
+peer default ip address pool EKB-PPPoE
+exit
+bba-group pppoe EKB-BBA
+virtual-template 1
+exit
+int fa 0/0
+no sh
+pppoe enable group EKB-BBA
+ex
+
+ip local pool TAGIL-PPPoE 20.20.20.2
+int virtual-template 2
+ip add 20.20.20.1 255.255.255.252
+encapsulation ppp
+ppp authentication chap
+peer default ip address pool TAGIL-PPPoE
+ex
+bba-group pppoe TAGIL-BBA
+virtual-template 2
+ex
+int fa 0/1
+no sh
+pppoe enable group TAGIL-BBA
+ex
