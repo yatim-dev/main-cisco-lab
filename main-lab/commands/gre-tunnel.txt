@@ -1,0 +1,27 @@
+---perm-gw---
+int tunnel 0
+tunnel mode gre ip
+ip add 192.168.1.1 255.255.255.252
+tunnel source 2.2.2.2
+tunnel destination 1.1.1.2
+ex
+router ospf 1
+passive-interface fa 0/1
+network 192.168.1.0 0.0.0.3 area 0
+network 192.168.10.0 0.0.0.255 area 1
+network 192.168.20.0 0.0.0.255 area 1
+ex
+
+---ekb-gw---
+int tunnel 0
+tunnel mode gre ip
+ip add 192.168.1.2 255.255.255.252
+tunnel source 1.1.1.2
+tunnel destination 2.2.2.2
+ex
+router ospf 1
+passive-interface fa 0/1
+network 192.168.1.0 0.0.0.3 area 0
+network 192.168.30.0 0.0.0.255 area 2
+network 192.168.40.0 0.0.0.255 area 2
+ex
