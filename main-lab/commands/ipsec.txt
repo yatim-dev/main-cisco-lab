@@ -1,0 +1,56 @@
+---perm-gw---
+crypto isakmp policy 1
+encryption 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+ex
+
+crypto isakmp key grepass address 1.1.1.2
+
+ip access-list extended VPN-TRAFFIC
+permit ip 192.168.10.0 0.0.0.255 192.168.30.0 0.0.0.255
+ex
+
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+ex
+
+crypto map CMAP 10 ipsec-isakmp
+set peer 1.1.1.2
+set transform-set TS
+match address VPN-TRAFFIC
+ex
+
+int s1/0
+crypto map CMAP
+ex
+
+
+---ekb-gw---
+crypto isakmp policy 1
+encryption 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+ex
+
+crypto isakmp key grepass address 2.2.2.2
+
+ip access-list extended VPN-TRAFFIC
+permit ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
+ex
+
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+ex
+
+crypto map CMAP 10 ipsec-isakmp
+set peer 2.2.2.2
+set transform-set TS
+match address VPN-TRAFFIC
+ex
+
+int fa 0/0
+crypto map CMAP
+ex
