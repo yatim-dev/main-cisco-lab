@@ -1,0 +1,79 @@
+May 22 09:48:12.564 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 09:48:12.565 HYPERVISOR: Started on IP = localhost, TCP port = 51591.
+May 22 09:48:12.755 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 09:48:12.755 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips 
+May 22 09:48:12.755 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips
+May 22 09:48:12.756 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\5c9ee06f-7445-4cf0-8efe-62f4d08d734a 
+May 22 09:48:12.757 GENERAL: working_dir=C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\5c9ee06f-7445-4cf0-8efe-62f4d08d734a
+May 22 09:48:12.757 HYPERVISOR: exec_cmd: vm create ISP 1 c3745 
+May 22 09:48:12.758 VM: VM ISP created.
+May 22 09:48:12.758 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5004 
+May 22 09:48:12.759 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP 
+May 22 09:48:12.759 HYPERVISOR: exec_cmd: vm set_disk0 ISP 0 
+May 22 09:48:12.760 HYPERVISOR: exec_cmd: vm set_exec_area ISP 64 
+May 22 09:48:12.760 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:48:12.760 HYPERVISOR: exec_cmd: vm set_idle_pc ISP 0x6023f5d0 
+May 22 09:48:12.761 HYPERVISOR: exec_cmd: vm set_ios ISP C:/Users/yatim/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+May 22 09:48:12.761 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP c401.2250.0000 
+May 22 09:48:12.762 HYPERVISOR: exec_cmd: vm set_nvram ISP 256 
+May 22 09:48:12.762 HYPERVISOR: exec_cmd: vm set_ram ISP 256 
+May 22 09:48:12.762 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:48:12.762 HYPERVISOR: exec_cmd: vm slot_add_binding ISP 1 0 NM-4T 
+May 22 09:48:12.763 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP 5004 
+May 22 09:48:15.564 HYPERVISOR: exec_cmd: nio create_udp udp-8b65fbf8-2864-467c-a521-5bc3b41bd9d1 10030 127.0.0.1 10031 
+May 22 09:48:15.850 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 1 0 udp-8b65fbf8-2864-467c-a521-5bc3b41bd9d1 
+May 22 09:48:15.851 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:48:15.884 HYPERVISOR: exec_cmd: nio create_udp udp-59a627bd-64cc-4acb-a920-a9b9f1066f7e 10034 127.0.0.1 10035 
+May 22 09:48:15.891 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 1 1 udp-59a627bd-64cc-4acb-a920-a9b9f1066f7e 
+May 22 09:48:15.891 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:48:16.234 HYPERVISOR: exec_cmd: nio create_udp udp-9e7073a7-207b-4499-b66e-c6ff0f52115c 10040 127.0.0.1 10041 
+May 22 09:48:16.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP 0 0 udp-9e7073a7-207b-4499-b66e-c6ff0f52115c 
+May 22 09:48:16.238 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:50:23.411 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+May 22 09:50:23.412 VM: VM Ghost created.
+May 22 09:50:23.412 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/yatim/GNS3/images/IOS/c3745-advipservicesk9-mz.124-25d.image 
+May 22 09:50:23.413 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 09:50:23.413 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\c3745-advipservicesk9-mz.124-25d.image-256.ghost 
+May 22 09:50:23.414 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+May 22 09:50:23.414 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 09:50:23.415 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 22 09:50:23.415 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 09:50:23.759 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 09:50:23.760 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 09:50:23.879 VM: VM Ghost shutdown.
+May 22 09:50:23.879 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 22 09:50:23.881 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 09:50:23.881 VM: VM Ghost destroyed.
+May 22 09:50:23.889 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+May 22 09:50:23.889 HYPERVISOR: exec_cmd: vm set_ghost_file ISP C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\c3745-advipservicesk9-mz.124-25d.image-256.ghost 
+May 22 09:50:23.890 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 09:50:23.894 HYPERVISOR: exec_cmd: vm set_config ISP configs\i1_startup-config.cfg 
+May 22 09:50:23.895 HYPERVISOR: exec_cmd: vm start ISP 
+May 22 10:13:18.843 HYPERVISOR: exec_cmd: nio bind_filter udp-9e7073a7-207b-4499-b66e-c6ff0f52115c 2 capture 
+May 22 10:13:18.843 HYPERVISOR: exec_cmd: nio setup_filter udp-9e7073a7-207b-4499-b66e-c6ff0f52115c 2 en10mb C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\captures\ISP_FastEthernet00_to_ekb-gw_FastEthernet00.pcap 
+May 22 10:14:25.087 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+May 22 10:14:25.089 HYPERVISOR: exec_cmd: vm set_ghost_file ISP C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\c3745-advipservicesk9-mz.124-25d.image-256.ghost 
+May 22 10:14:25.090 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:28:12.315 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:28:12.316 HYPERVISOR: exec_cmd: vm stop ISP 
+May 22 10:28:12.400 VM: VM ISP shutdown.
+May 22 10:28:12.401 HYPERVISOR: exec_cmd: vm extract_config ISP 
+May 22 10:28:12.411 HYPERVISOR: exec_cmd: nio unbind_filter udp-9e7073a7-207b-4499-b66e-c6ff0f52115c 2 
+May 22 10:28:18.368 HYPERVISOR: exec_cmd: vm set_ghost_status ISP 2 
+May 22 10:28:18.371 HYPERVISOR: exec_cmd: vm set_ghost_file ISP C:\Users\yatim\GNS3\projects\main-cisco-lab\main-lab\project-files\dynamips\c3745-advipservicesk9-mz.124-25d.image-256.ghost 
+May 22 10:28:18.372 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:28:18.377 HYPERVISOR: exec_cmd: vm set_config ISP configs\i1_startup-config.cfg 
+May 22 10:28:18.378 HYPERVISOR: exec_cmd: vm start ISP 
+May 22 10:35:58.854 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:35:58.855 HYPERVISOR: exec_cmd: vm stop ISP 
+May 22 10:35:58.986 VM: VM ISP shutdown.
+May 22 10:35:58.987 HYPERVISOR: exec_cmd: vm extract_config ISP 
+May 22 10:36:33.318 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:36:33.319 HYPERVISOR: exec_cmd: vm extract_config ISP 
+May 22 10:36:33.551 HYPERVISOR: exec_cmd: vm get_status ISP 
+May 22 10:36:33.551 HYPERVISOR: exec_cmd: vm extract_config ISP 
+May 22 10:36:33.553 HYPERVISOR: exec_cmd: vm delete ISP 
+May 22 10:36:33.553 VM: VM ISP destroyed.
+May 22 10:36:33.554 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 10:36:34.013 HYPERVISOR: Stopped.
+May 22 10:36:34.013 GENERAL: reset done.

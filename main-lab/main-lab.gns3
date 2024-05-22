@@ -147,7 +147,7 @@
                 "drawing_id": "2d96f32f-de0c-4db6-a467-d84a2b9ba61e",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"265\" height=\"56\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">1. \u0412 \u0442\u0443\u043d\u043d\u0435\u043b\u044c VLAN 10, 30\n2. \u0412 PAT VLAN 20, 40\n3. PPP - username cisco password cisco</text></svg>",
+                "svg": "<svg width=\"265\" height=\"72\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">1. \u0412 \u0442\u0443\u043d\u043d\u0435\u043b\u044c VLAN 10, 30\n2. \u0412 PAT VLAN 20, 40\n3. PPP - username cisco password cisco\n4. PSK - grepass</text></svg>",
                 "x": -522,
                 "y": -243,
                 "z": 2
@@ -157,8 +157,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"125\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fa 0/0 1.1.1.2 /30</text></svg>",
-                "x": 81,
-                "y": -16,
+                "x": 77,
+                "y": -24,
                 "z": 2
             },
             {
@@ -640,7 +640,7 @@
         "nodes": [
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5004,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -699,7 +699,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5001,
+                "console": 5005,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -758,7 +758,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5002,
+                "console": 5006,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -817,7 +817,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5003,
+                "console": 5007,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -956,7 +956,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5004,
+                "console": 5008,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -985,7 +985,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5006,
+                "console": 5010,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1014,7 +1014,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5008,
+                "console": 5012,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1043,7 +1043,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5010,
+                "console": 5014,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1072,7 +1072,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5012,
+                "console": 5016,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1104,5 +1104,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.46",
-    "zoom": 100
+    "zoom": 84
 }
