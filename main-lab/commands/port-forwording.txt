@@ -1,0 +1,10 @@
+---web-gw---
+ip nat inside source static tcp 172.16.0.2 8080 3.3.3.2 80
+
+int fa 0/0
+ip nat inside
+ex
+
+int s 1/0
+ip nat outside
+ex

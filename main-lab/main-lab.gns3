@@ -318,38 +318,6 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "30b195c5-853f-4586-bb70-00d0bad3a73c",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 13,
-                            "y": -21
-                        },
-                        "node_id": "683d5efd-392c-46fb-8cb5-71b82dad85bd",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e1/0",
-                            "x": -55,
-                            "y": 49
-                        },
-                        "node_id": "a07d450a-6e4b-46de-8b00-d91f384d81b6",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "dcdf7628-6d48-4adc-8f43-c3aecf149e32",
                 "link_style": {},
                 "nodes": [
@@ -606,7 +574,7 @@
             },
             {
                 "filters": {},
-                "link_id": "25024ca6-acf9-411f-8ea3-e003d378f24d",
+                "link_id": "ab7b98d7-95f9-436e-ad3a-e8e158871a10",
                 "link_style": {},
                 "nodes": [
                     {
@@ -616,7 +584,7 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f0/0",
                             "x": 72,
-                            "y": 21
+                            "y": 22
                         },
                         "node_id": "473bc142-8e09-4205-8633-2b5201aec3c7",
                         "port_number": 0
@@ -628,9 +596,41 @@
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
                             "x": -7,
-                            "y": 30
+                            "y": 28
                         },
-                        "node_id": "627fe5f1-e011-4831-b44c-ce0ad5544d6c",
+                        "node_id": "b9c94519-026e-4296-8c2c-ce8f5e1bd107",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "f2804c66-b7ed-4174-a8c8-cb22086ec159",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1/0",
+                            "x": 10,
+                            "y": 46
+                        },
+                        "node_id": "a07d450a-6e4b-46de-8b00-d91f384d81b6",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 57,
+                            "y": -1
+                        },
+                        "node_id": "69b95a97-800d-487e-841e-9101e111b6f6",
                         "port_number": 0
                     }
                 ],
@@ -956,35 +956,6 @@
             },
             {
                 "compute_id": "local",
-                "console": 5008,
-                "console_auto_start": false,
-                "console_type": "telnet",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC1",
-                    "x": 11,
-                    "y": 62
-                },
-                "locked": false,
-                "name": "PC1",
-                "node_id": "683d5efd-392c-46fb-8cb5-71b82dad85bd",
-                "node_type": "vpcs",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {},
-                "symbol": ":/symbols/vpcs_guest.svg",
-                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
-                "width": 65,
-                "x": -402,
-                "y": 326,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
                 "console": 5010,
                 "console_auto_start": false,
                 "console_type": "telnet",
@@ -1072,31 +1043,80 @@
             },
             {
                 "compute_id": "local",
-                "console": 5016,
+                "console": null,
                 "console_auto_start": false,
-                "console_type": "telnet",
+                "console_type": "none",
                 "custom_adapters": [],
-                "first_port_name": null,
+                "first_port_name": "",
+                "height": 70,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "site-pc-1",
+                    "x": -1,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "site-pc-1",
+                "node_id": "b9c94519-026e-4296-8c2c-ce8f5e1bd107",
+                "node_type": "virtualbox",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "on_close": "power_off",
+                    "ram": 8192,
+                    "usage": "",
+                    "use_any_adapter": true,
+                    "vmname": "UNIX-course"
+                },
+                "symbol": ":/symbols/classic/server.svg",
+                "template_id": "d7d1c13e-8fc7-4581-959e-b687000d80ad",
+                "width": 49,
+                "x": 126,
+                "y": -362,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": "",
                 "height": 59,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC5",
-                    "x": 16,
+                    "text": "CTF-course-1",
+                    "x": -14,
                     "y": -25
                 },
                 "locked": false,
-                "name": "PC5",
-                "node_id": "627fe5f1-e011-4831-b44c-ce0ad5544d6c",
-                "node_type": "vpcs",
+                "name": "CTF-course-1",
+                "node_id": "69b95a97-800d-487e-841e-9101e111b6f6",
+                "node_type": "virtualbox",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {},
-                "symbol": ":/symbols/vpcs_guest.svg",
-                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "properties": {
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "headless": false,
+                    "linked_clone": false,
+                    "on_close": "power_off",
+                    "ram": 8192,
+                    "usage": "",
+                    "use_any_adapter": true,
+                    "vmname": "CTF-course"
+                },
+                "symbol": ":/symbols/vbox_guest.svg",
+                "template_id": "33e81014-318a-40c0-b468-64783723d9ad",
                 "width": 65,
-                "x": 137,
-                "y": -358,
+                "x": -402,
+                "y": 328,
                 "z": 1
             }
         ]
