@@ -1,0 +1,28 @@
+conf t
+int fa 0/0
+ip address 172.16.0.1 255.255.255.0
+no sh
+ex
+
+int s 1/2
+ip address 3.3.3.2 255.255.255.252
+no sh
+ex
+
+router bgp 22332
+neighbor 3.3.3.1 remote-as 42042
+network 3.3.3.0 mask 255.255.255.252
+ex
+
+ip nat inside source static tcp 172.16.0.2 8080 3.3.3.2 80
+
+int fa 0/0
+ip nat inside
+ex
+
+int s 1/2
+ip nat outside
+ex
+
+access-list 1 permit 172.16.0.0 0.0.0.255
+ip nat inside source list 1 interface s1/2 overload

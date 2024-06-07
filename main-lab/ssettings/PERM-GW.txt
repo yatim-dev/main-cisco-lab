@@ -1,0 +1,86 @@
+conf t
+int fa 0/0
+no sh
+ex
+
+int fa 0/0.30
+encapsulation dot1Q 30
+ip add 192.168.30.1 255.255.255.0
+ex
+
+int fa 0/0.40
+encapsulation dot1Q 40
+ip add 192.168.40.1 255.255.255.0
+ex
+
+int fa 0/1
+sh
+ex
+int dialer 1
+ip address negotiated
+encapsulation ppp
+ppp authentication chap callin
+ppp chap hostname cisco
+ppp chap password cisco
+dialer-group 1
+dialer pool 1
+exit
+int fa 0/1
+pppoe enable
+pppoe-client dial-pool-number 1
+no sh
+exit
+
+router bgp 42042
+neighbor 2.2.2.1 remote-as 42042
+network 2.2.2.0 mask 255.255.255.252
+ex
+
+int tunnel 0
+tunnel mode gre ip
+ip add 192.168.0.2 255.255.255.252
+tunnel source 2.2.2.2
+tunnel destination 1.1.1.2
+ex
+router ospf 1
+network 192.168.0.0 0.0.0.3 area 0
+network 192.168.30.0 0.0.0.255 area 2
+ex
+
+crypto isakmp policy 1
+encryption 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+ex
+
+crypto isakmp key grepass address 1.1.1.2
+
+ip access-list extended VPN-TRAFFIC
+permit ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
+permit ip 192.168.0.0 0.0.0.3 192.168.0.0 0.0.0.3
+ex
+
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+ex
+
+crypto map CMAP 10 ipsec-isakmp
+set peer 1.1.1.2
+set transform-set TS
+match address VPN-TRAFFIC
+ex
+
+int dialer 1
+crypto map CMAP
+ex
+
+access-list 1 permit 192.168.40.0 0.0.0.255
+ip nat inside source list 1 interface Dialer1  overload
+int fa 0/0.40
+ip nat inside
+ex
+int Dialer1
+ip nat outside
+ex
+

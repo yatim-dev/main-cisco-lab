@@ -1,0 +1,78 @@
+conf t
+int fa 0/0
+no sh
+ex
+
+int fa 0/0.10
+encapsulation dot1Q 10
+ip add 192.168.10.1 255.255.255.0
+ex
+
+int fa 0/0.20
+encapsulation dot1Q 20
+ip add 192.168.20.1 255.255.255.0
+ex
+
+int multilink 1
+ppp multilink group 1
+ip address negotiated
+exit
+
+int serial 1/0
+encapsulation ppp
+ppp multilink group 1
+no sh
+ex
+
+router bgp 42042
+neighbor 1.1.1.1 remote-as 42042
+network 1.1.1.0 mask 255.255.255.252
+ex
+
+int tunnel 0
+tunnel mode gre ip
+ip add 192.168.0.1 255.255.255.252
+tunnel source 1.1.1.2
+tunnel destination 2.2.2.2
+ex
+router ospf 1
+network 192.168.0.0 0.0.0.3 area 0
+network 192.168.10.0 0.0.0.255 area 1
+ex
+
+crypto isakmp policy 1
+encryption 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+ex
+
+crypto isakmp key grepass address 2.2.2.2
+
+ip access-list extended VPN-TRAFFIC
+permit ip 192.168.10.0 0.0.0.255 192.168.30.0 0.0.0.255
+permit ip 192.168.0.0 0.0.0.3 192.168.0.0 0.0.0.3
+ex
+
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+ex
+
+crypto map CMAP 10 ipsec-isakmp
+set peer 2.2.2.2
+set transform-set TS
+match address VPN-TRAFFIC
+ex
+
+int Multilink1
+crypto map CMAP
+ex
+
+access-list 1 permit 192.168.20.0 0.0.0.255
+ip nat inside source list 1 interface Multilink 1 overload
+int fa 0/0.20
+ip nat inside
+ex
+int multilink 1
+ip nat outside
+ex

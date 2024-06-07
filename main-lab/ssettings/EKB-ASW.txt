@@ -1,0 +1,23 @@
+conf t
+vlan 10
+ex
+vlan 20
+ex
+int eth 1/1
+switchport mode access
+switchport access vlan 10
+ex
+int eth 1/2
+switchport mode access
+switchport access vlan 20
+ex
+int eth 1/0
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 10,20
+ex
+
+show vlan brief
+show interfaces trunk
+
+wr mem
